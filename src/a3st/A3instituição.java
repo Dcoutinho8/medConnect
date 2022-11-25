@@ -1,9 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package a3st;
 
+package a3st;
+import javax.swing.JOptionPane;
 /**
  *
  * @author tiago
@@ -29,7 +26,6 @@ public class A3instituição extends javax.swing.JFrame {
         Senha = new javax.swing.JTextField();
         Cacesso = new javax.swing.JTextField();
         Entrar = new javax.swing.JButton();
-        Cadastro = new javax.swing.JButton();
         RecuperarSenha = new javax.swing.JButton();
         TrocaUser = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -39,6 +35,11 @@ public class A3instituição extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         Senha.setText("Senha");
+        Senha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SenhaActionPerformed(evt);
+            }
+        });
         getContentPane().add(Senha);
         Senha.setBounds(50, 260, 250, 22);
 
@@ -62,37 +63,26 @@ public class A3instituição extends javax.swing.JFrame {
         getContentPane().add(Entrar);
         Entrar.setBounds(130, 360, 80, 30);
 
-        Cadastro.setText("Cadastro");
-        Cadastro.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        Cadastro.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        Cadastro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CadastroActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Cadastro);
-        Cadastro.setBounds(530, 280, 90, 30);
-
+        RecuperarSenha.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         RecuperarSenha.setText("Recuperar a senha");
         RecuperarSenha.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        RecuperarSenha.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         RecuperarSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RecuperarSenhaActionPerformed(evt);
             }
         });
         getContentPane().add(RecuperarSenha);
-        RecuperarSenha.setBounds(360, 520, 140, 22);
+        RecuperarSenha.setBounds(370, 530, 140, 22);
 
+        TrocaUser.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         TrocaUser.setText("Trocar user");
         TrocaUser.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        TrocaUser.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         getContentPane().add(TrocaUser);
-        TrocaUser.setBounds(665, 520, 100, 22);
+        TrocaUser.setBounds(670, 530, 100, 22);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\Logininst.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\LoginInst.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 774, 552);
+        jLabel1.setBounds(0, -10, 823, 576);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -102,11 +92,6 @@ public class A3instituição extends javax.swing.JFrame {
         paciente.setVisible(true);
     }//GEN-LAST:event_EntrarActionPerformed
 
-    private void CadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CadastroActionPerformed
-        Cadastro2 cdstro = new Cadastro2();
-        cdstro.setVisible(true);
-    }//GEN-LAST:event_CadastroActionPerformed
-
     private void RecuperarSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RecuperarSenhaActionPerformed
         AERsenha2 Rsenha = new AERsenha2();
         Rsenha.setVisible(true);
@@ -115,6 +100,16 @@ public class A3instituição extends javax.swing.JFrame {
     private void CacessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CacessoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CacessoActionPerformed
+
+    private void SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenhaActionPerformed
+        if(Cacesso.getText().equals("657462")&& Senha.getText().equals("anedota")){
+            JOptionPane.showMessageDialog(null, "Acesso permetido");
+            A3Cpaciente carteirinha = new A3Cpaciente();
+               carteirinha.setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(null, "Acesso Negado!");
+        }
+    }//GEN-LAST:event_SenhaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -153,7 +148,6 @@ public class A3instituição extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Cacesso;
-    private javax.swing.JButton Cadastro;
     private javax.swing.JButton Entrar;
     private javax.swing.JButton RecuperarSenha;
     private javax.swing.JTextField Senha;

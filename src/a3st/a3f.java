@@ -17,11 +17,10 @@ public class a3f extends javax.swing.JFrame {
 
         Paciente = new javax.swing.JButton();
         Instituição = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1281, 766));
+        setMinimumSize(new java.awt.Dimension(776, 580));
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(null);
 
@@ -35,7 +34,7 @@ public class a3f extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Paciente);
-        Paciente.setBounds(220, 390, 150, 40);
+        Paciente.setBounds(150, 330, 150, 40);
 
         Instituição.setBackground(new java.awt.Color(127, 162, 251));
         Instituição.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -47,13 +46,11 @@ public class a3f extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Instituição);
-        Instituição.setBounds(220, 470, 150, 40);
+        Instituição.setBounds(150, 410, 150, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tiago\\Downloads\\WhatsApp Image 2022-11-08 at 21.54.14.jpeg")); // NOI18N
-        jPanel1.add(jLabel1);
-
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 1280, 720);
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\tELAi.png")); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 777, 547);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -114,6 +111,5 @@ public class a3f extends javax.swing.JFrame {
     private javax.swing.JButton Instituição;
     private javax.swing.JButton Paciente;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

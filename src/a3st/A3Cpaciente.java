@@ -35,11 +35,11 @@ public class A3Cpaciente extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Número de carteirinha" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(10, 160, 400, 22);
+        jComboBox1.setBounds(30, 180, 400, 22);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\Consulta.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\ConsultaP.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 777, 531);
+        jLabel1.setBounds(0, -30, 808, 591);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

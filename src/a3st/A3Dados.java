@@ -28,13 +28,11 @@ public class A3Dados extends javax.swing.JFrame {
 
         Coração = new javax.swing.JButton();
         Familia = new javax.swing.JButton();
-        Cirurgias = new javax.swing.JButton();
         Remedios = new javax.swing.JButton();
         Telefone = new javax.swing.JButton();
         Alergia = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        Vinicio = new javax.swing.JButton();
         Seta = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -42,81 +40,65 @@ public class A3Dados extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1060, 780));
         getContentPane().setLayout(null);
 
-        Coração.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\doenca-cardiaca.png")); // NOI18N
         Coração.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CoraçãoActionPerformed(evt);
             }
         });
         getContentPane().add(Coração);
-        Coração.setBounds(250, 420, 80, 80);
+        Coração.setBounds(110, 280, 80, 80);
 
-        Familia.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\familia.png")); // NOI18N
         Familia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FamiliaActionPerformed(evt);
             }
         });
         getContentPane().add(Familia);
-        Familia.setBounds(500, 420, 80, 80);
+        Familia.setBounds(330, 280, 80, 80);
 
-        Cirurgias.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\luva.png")); // NOI18N
-        Cirurgias.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CirurgiasActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Cirurgias);
-        Cirurgias.setBounds(500, 580, 80, 80);
-
-        Remedios.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\medicacao.png")); // NOI18N
         Remedios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RemediosActionPerformed(evt);
             }
         });
         getContentPane().add(Remedios);
-        Remedios.setBounds(750, 420, 80, 80);
+        Remedios.setBounds(560, 280, 80, 80);
 
-        Telefone.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\telefone.png")); // NOI18N
         Telefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TelefoneActionPerformed(evt);
             }
         });
         getContentPane().add(Telefone);
-        Telefone.setBounds(750, 580, 80, 80);
+        Telefone.setBounds(450, 420, 80, 80);
 
-        Alergia.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\alergia-a-drogas.png")); // NOI18N
         Alergia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AlergiaActionPerformed(evt);
             }
         });
         getContentPane().add(Alergia);
-        Alergia.setBounds(250, 580, 80, 80);
+        Alergia.setBounds(220, 420, 80, 80);
 
+        jTextField1.setBackground(new java.awt.Color(19, 107, 105));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(170, 170, 420, 22);
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(180, 270, 220, 22);
+        jTextField1.setBounds(100, 110, 370, 22);
 
-        Vinicio.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\casa.png")); // NOI18N
-        Vinicio.addActionListener(new java.awt.event.ActionListener() {
+        jTextField2.setBackground(new java.awt.Color(19, 107, 105));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VinicioActionPerformed(evt);
+                jTextField2ActionPerformed(evt);
             }
         });
-        getContentPane().add(Vinicio);
-        Vinicio.setBounds(10, 680, 70, 70);
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(110, 170, 220, 22);
 
         Seta.setBackground(new java.awt.Color(170, 191, 184));
-        Seta.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\setas-pretas-para-a-esquerda.png")); // NOI18N
         Seta.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         Seta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,9 +108,9 @@ public class A3Dados extends javax.swing.JFrame {
         getContentPane().add(Seta);
         Seta.setBounds(0, 10, 80, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\7Dados.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\Dados.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 6, 1060, 750);
+        jLabel1.setBounds(0, 6, 1060, 547);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -137,11 +119,6 @@ public class A3Dados extends javax.swing.JFrame {
        A3CDF familia = new A3CDF();
        familia.setVisible(true);
     }//GEN-LAST:event_FamiliaActionPerformed
-
-    private void VinicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VinicioActionPerformed
-         a3f Dados = new a3f();
-         Dados.setVisible(true);
-    }//GEN-LAST:event_VinicioActionPerformed
 
     private void SetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetaActionPerformed
         A31 lgin = new A31();
@@ -168,15 +145,14 @@ public class A3Dados extends javax.swing.JFrame {
                 
     }//GEN-LAST:event_AlergiaActionPerformed
 
-    private void CirurgiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CirurgiasActionPerformed
-       A3HC cirurgia = new A3HC();
-       cirurgia.setVisible(true);
-    }//GEN-LAST:event_CirurgiasActionPerformed
-
     private void TelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TelefoneActionPerformed
         A3CE emergencia = new A3CE();
         emergencia.setVisible(true);
     }//GEN-LAST:event_TelefoneActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,13 +191,11 @@ public class A3Dados extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Alergia;
-    private javax.swing.JButton Cirurgias;
     private javax.swing.JButton Coração;
     private javax.swing.JButton Familia;
     private javax.swing.JButton Remedios;
     private javax.swing.JButton Seta;
     private javax.swing.JButton Telefone;
-    private javax.swing.JButton Vinicio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;

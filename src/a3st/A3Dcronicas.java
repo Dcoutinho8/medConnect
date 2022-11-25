@@ -40,6 +40,7 @@ public class A3Dcronicas extends javax.swing.JFrame {
         jTextField10 = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
         Seta = new javax.swing.JButton();
+        jTextField12 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,12 +50,17 @@ public class A3Dcronicas extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jButton1.setText("Adicionar");
         jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
-        jButton1.setBounds(250, 350, 90, 40);
+        jButton1.setBounds(170, 250, 90, 40);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(140, 270, 320, 22);
+        jComboBox1.setBounds(90, 190, 250, 22);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,11 +68,11 @@ public class A3Dcronicas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(640, 270, 280, 22);
+        jTextField1.setBounds(430, 190, 260, 22);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(640, 320, 280, 22);
+        jTextField2.setBounds(430, 230, 260, 22);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(640, 360, 280, 22);
+        jTextField3.setBounds(430, 270, 260, 22);
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,15 +80,21 @@ public class A3Dcronicas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField4);
-        jTextField4.setBounds(640, 400, 280, 22);
+        jTextField4.setBounds(430, 310, 260, 22);
+
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField5);
-        jTextField5.setBounds(640, 440, 280, 22);
+        jTextField5.setBounds(430, 350, 260, 22);
         getContentPane().add(jTextField6);
-        jTextField6.setBounds(640, 480, 280, 22);
+        jTextField6.setBounds(430, 390, 260, 22);
         getContentPane().add(jTextField7);
         jTextField7.setBounds(640, 560, 280, 22);
         getContentPane().add(jTextField8);
-        jTextField8.setBounds(640, 520, 280, 20);
+        jTextField8.setBounds(430, 430, 260, 20);
         getContentPane().add(jTextField9);
         jTextField9.setBounds(640, 600, 280, 22);
         getContentPane().add(jTextField10);
@@ -90,7 +102,6 @@ public class A3Dcronicas extends javax.swing.JFrame {
         getContentPane().add(jTextField11);
         jTextField11.setBounds(640, 680, 280, 22);
 
-        Seta.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\setas-pretas-para-a-esquerda.png")); // NOI18N
         Seta.setBackground(new java.awt.Color(170, 191, 184));
         Seta.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         Seta.addActionListener(new java.awt.event.ActionListener() {
@@ -100,10 +111,12 @@ public class A3Dcronicas extends javax.swing.JFrame {
         });
         getContentPane().add(Seta);
         Seta.setBounds(10, 10, 80, 40);
+        getContentPane().add(jTextField12);
+        jTextField12.setBounds(430, 470, 260, 22);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\8Dcronicos.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\Doenças Cronicas.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1072, 763);
+        jLabel1.setBounds(0, 0, 776, 560);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -120,6 +133,14 @@ public class A3Dcronicas extends javax.swing.JFrame {
         A3Dados dcronicas = new A3Dados();
         dcronicas.setVisible(true);
     }//GEN-LAST:event_SetaActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,6 +185,7 @@ public class A3Dcronicas extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

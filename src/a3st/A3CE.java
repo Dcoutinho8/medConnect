@@ -26,7 +26,6 @@ public class A3CE extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Seta = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
@@ -43,22 +42,16 @@ public class A3CE extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1061, 759));
+        setMinimumSize(new java.awt.Dimension(825, 610));
         getContentPane().setLayout(null);
-
-        Seta.setBackground(new java.awt.Color(170, 191, 184));
-        Seta.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\setas-pretas-para-a-esquerda.png")); // NOI18N
-        Seta.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        getContentPane().add(Seta);
-        Seta.setBounds(0, 0, 80, 40);
 
         jTextField1.setText("Nome");
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(130, 250, 320, 22);
+        jTextField1.setBounds(90, 190, 270, 22);
 
         jTextField2.setText("Grau de Parentesco");
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(130, 290, 320, 22);
+        jTextField2.setBounds(90, 220, 270, 22);
 
         jTextField3.setText("Telefone");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -67,35 +60,35 @@ public class A3CE extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(130, 330, 320, 22);
+        jTextField3.setBounds(90, 250, 270, 22);
 
         jTextField4.setText("Celular");
         getContentPane().add(jTextField4);
-        jTextField4.setBounds(130, 370, 320, 22);
+        jTextField4.setBounds(90, 280, 270, 22);
 
         jButton1.setText("Adicionar");
         getContentPane().add(jButton1);
-        jButton1.setBounds(240, 480, 90, 40);
+        jButton1.setBounds(160, 330, 90, 40);
         getContentPane().add(jTextField5);
-        jTextField5.setBounds(610, 250, 300, 22);
+        jTextField5.setBounds(460, 190, 270, 22);
         getContentPane().add(jTextField6);
-        jTextField6.setBounds(610, 310, 300, 22);
+        jTextField6.setBounds(460, 230, 270, 22);
         getContentPane().add(jTextField7);
-        jTextField7.setBounds(610, 370, 300, 22);
+        jTextField7.setBounds(460, 270, 270, 22);
         getContentPane().add(jTextField8);
-        jTextField8.setBounds(610, 430, 300, 22);
+        jTextField8.setBounds(460, 310, 270, 22);
         getContentPane().add(jTextField9);
-        jTextField9.setBounds(610, 500, 300, 22);
+        jTextField9.setBounds(460, 350, 270, 22);
         getContentPane().add(jTextField10);
-        jTextField10.setBounds(610, 560, 300, 22);
+        jTextField10.setBounds(460, 390, 270, 22);
         getContentPane().add(jTextField11);
-        jTextField11.setBounds(610, 620, 300, 22);
+        jTextField11.setBounds(460, 430, 270, 22);
         getContentPane().add(jTextField12);
-        jTextField12.setBounds(610, 680, 300, 22);
+        jTextField12.setBounds(460, 470, 270, 22);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\13CE.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\ContatosE.png")); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, -40, 1680, 830);
+        jLabel2.setBounds(0, -160, 1680, 830);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -140,7 +133,6 @@ public class A3CE extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Seta;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;

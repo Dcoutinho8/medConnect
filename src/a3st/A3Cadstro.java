@@ -41,7 +41,7 @@ public class A3Cadstro extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(937, 667));
+        setMinimumSize(new java.awt.Dimension(790, 620));
         getContentPane().setLayout(null);
 
         NomeC.setText("Nome Completo");
@@ -52,7 +52,7 @@ public class A3Cadstro extends javax.swing.JFrame {
             }
         });
         getContentPane().add(NomeC);
-        NomeC.setBounds(50, 210, 860, 20);
+        NomeC.setBounds(50, 210, 720, 20);
 
         DataNascimento.setText("Data de Nascimento");
         DataNascimento.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -82,23 +82,33 @@ public class A3Cadstro extends javax.swing.JFrame {
 
         CPF.setText("CPF");
         getContentPane().add(CPF);
-        CPF.setBounds(510, 260, 390, 22);
+        CPF.setBounds(510, 260, 260, 22);
 
         Tel.setText("Telefone Celular");
+        Tel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TelActionPerformed(evt);
+            }
+        });
         getContentPane().add(Tel);
-        Tel.setBounds(510, 310, 390, 22);
+        Tel.setBounds(510, 310, 260, 22);
 
         Nresidencia.setText("Numero da Residência");
         getContentPane().add(Nresidencia);
-        Nresidencia.setBounds(510, 370, 310, 22);
+        Nresidencia.setBounds(510, 380, 260, 22);
 
         Compl.setText("Complemento");
         getContentPane().add(Compl);
-        Compl.setBounds(510, 420, 250, 22);
+        Compl.setBounds(510, 420, 260, 22);
 
         ConfirmaS.setText("Confirmar Senha");
+        ConfirmaS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfirmaSActionPerformed(evt);
+            }
+        });
         getContentPane().add(ConfirmaS);
-        ConfirmaS.setBounds(510, 490, 310, 22);
+        ConfirmaS.setBounds(510, 480, 260, 22);
 
         Continuar.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         Continuar.setText("Continuar");
@@ -109,11 +119,11 @@ public class A3Cadstro extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Continuar);
-        Continuar.setBounds(380, 570, 100, 50);
+        Continuar.setBounds(380, 490, 100, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\6 CADASTRO.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\cadastro.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 940, 665);
+        jLabel1.setBounds(0, 0, 780, 551);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,7 +139,16 @@ public class A3Cadstro extends javax.swing.JFrame {
     private void ContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContinuarActionPerformed
        A31 login = new A31();
        login.setVisible(true);
+       
     }//GEN-LAST:event_ContinuarActionPerformed
+
+    private void TelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TelActionPerformed
+
+    private void ConfirmaSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmaSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ConfirmaSActionPerformed
 
     /**
      * @param args the command line arguments

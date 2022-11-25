@@ -25,7 +25,7 @@ public class A31 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(765, 585));
+        setMinimumSize(new java.awt.Dimension(776, 590));
         getContentPane().setLayout(null);
 
         EntrarL.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
@@ -37,7 +37,7 @@ public class A31 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(EntrarL);
-        EntrarL.setBounds(120, 390, 100, 40);
+        EntrarL.setBounds(120, 370, 100, 40);
 
         Cadastrese.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         Cadastrese.setText("Cadastre-se");
@@ -48,18 +48,26 @@ public class A31 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Cadastrese);
-        Cadastrese.setBounds(490, 300, 100, 22);
+        Cadastrese.setBounds(520, 320, 100, 22);
 
         Senha.setText("Senha");
         Senha.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(Senha);
-        Senha.setBounds(20, 300, 300, 22);
+        Senha.setBounds(30, 290, 300, 22);
 
+        Email.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         Email.setText("Email ou CPF");
+        Email.setToolTipText("Email ou CPF");
         Email.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Email.setSelectedTextColor(new java.awt.Color(204, 204, 204));
+        Email.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EmailActionPerformed(evt);
+            }
+        });
         getContentPane().add(Email);
-        Email.setBounds(20, 250, 300, 22);
+        Email.setBounds(30, 230, 300, 22);
+        Email.getAccessibleContext().setAccessibleName("Email ou CPF");
 
         TeocarUser.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         TeocarUser.setText("Trocar User");
@@ -75,15 +83,15 @@ public class A31 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Rsenha);
-        Rsenha.setBounds(350, 520, 120, 18);
+        Rsenha.setBounds(360, 520, 120, 18);
 
         jButton3.setText("jButton3");
         getContentPane().add(jButton3);
-        jButton3.setBounds(670, 520, 75, 22);
+        jButton3.setBounds(670, 520, 75, 23);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\2.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\login.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 749, 544);
+        jLabel1.setBounds(0, 0, 777, 551);
 
         jPanel1.setMinimumSize(new java.awt.Dimension(756, 552));
         getContentPane().add(jPanel1);
@@ -113,6 +121,10 @@ public class A31 extends javax.swing.JFrame {
         A3Cadstro cadastro = new A3Cadstro();
         cadastro.setVisible(true);
     }//GEN-LAST:event_CadastreseActionPerformed
+
+    private void EmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EmailActionPerformed
 
     /**
      * @param args the command line arguments

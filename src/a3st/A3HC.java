@@ -26,84 +26,56 @@ public class A3HC extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Seta = new javax.swing.JButton();
         NomeC1 = new javax.swing.JTextField();
         Data1 = new javax.swing.JTextField();
-        Complica1 = new javax.swing.JTextField();
-        Pós1 = new javax.swing.JTextField();
         Adicionar = new javax.swing.JButton();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1080, 775));
+        setMinimumSize(new java.awt.Dimension(815, 610));
         getContentPane().setLayout(null);
-
-        Seta.setBackground(new java.awt.Color(170, 191, 184));
-        Seta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SetaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Seta);
-        Seta.setBounds(0, 0, 80, 40);
 
         NomeC1.setText("Nome da cirurgia");
         getContentPane().add(NomeC1);
-        NomeC1.setBounds(120, 260, 340, 22);
+        NomeC1.setBounds(90, 190, 260, 22);
 
         Data1.setText("Data que foi realizada");
         getContentPane().add(Data1);
-        Data1.setBounds(120, 320, 340, 22);
-
-        Complica1.setText("Houve complicações?");
-        getContentPane().add(Complica1);
-        Complica1.setBounds(120, 380, 340, 22);
-
-        Pós1.setText("Como foi o pós operatório?");
-        getContentPane().add(Pós1);
-        Pós1.setBounds(120, 440, 340, 22);
+        Data1.setBounds(90, 230, 260, 22);
 
         Adicionar.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         Adicionar.setText("Adicionar");
         Adicionar.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        Adicionar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AdicionarActionPerformed(evt);
+            }
+        });
         getContentPane().add(Adicionar);
-        Adicionar.setBounds(240, 530, 100, 40);
+        Adicionar.setBounds(160, 290, 100, 40);
         getContentPane().add(jTextField5);
-        jTextField5.setBounds(640, 270, 180, 22);
+        jTextField5.setBounds(470, 200, 250, 22);
         getContentPane().add(jTextField6);
-        jTextField6.setBounds(640, 330, 170, 22);
-        getContentPane().add(jTextField7);
-        jTextField7.setBounds(640, 410, 200, 22);
+        jTextField6.setBounds(480, 280, 240, 22);
         getContentPane().add(jTextField8);
-        jTextField8.setBounds(640, 450, 200, 22);
+        jTextField8.setBounds(480, 360, 230, 22);
         getContentPane().add(jTextField9);
-        jTextField9.setBounds(630, 510, 260, 22);
-        getContentPane().add(jTextField10);
-        jTextField10.setBounds(630, 570, 180, 22);
-        getContentPane().add(jTextField11);
-        jTextField11.setBounds(630, 650, 310, 22);
-        getContentPane().add(jTextField12);
-        jTextField12.setBounds(630, 700, 300, 22);
+        jTextField9.setBounds(450, 440, 240, 22);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\12HC.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\HistóricoC.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1073, 762);
+        jLabel1.setBounds(0, 0, 805, 573);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetaActionPerformed
-       A3Dados Hcirurgias = new A3Dados();
-       Hcirurgias.setVisible(true);       
-    }//GEN-LAST:event_SetaActionPerformed
+    private void AdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdicionarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AdicionarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,18 +114,11 @@ public class A3HC extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Adicionar;
-    private javax.swing.JTextField Complica1;
     private javax.swing.JTextField Data1;
     private javax.swing.JTextField NomeC1;
-    private javax.swing.JTextField Pós1;
-    private javax.swing.JButton Seta;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables

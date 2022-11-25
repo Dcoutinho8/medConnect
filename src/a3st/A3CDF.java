@@ -41,7 +41,6 @@ public class A3CDF extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
         jComboBox2 = new javax.swing.JComboBox<>();
-        Seta = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,72 +50,68 @@ public class A3CDF extends javax.swing.JFrame {
         jButton1.setText("Adicionar");
         jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         getContentPane().add(jButton1);
-        jButton1.setBounds(210, 350, 90, 18);
+        jButton1.setBounds(170, 320, 90, 30);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(130, 230, 270, 22);
+        jComboBox1.setBounds(90, 200, 250, 22);
 
         jLabel2.setText("Doença");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(540, 210, 50, 16);
+        jLabel2.setBounds(440, 190, 50, 16);
 
         jLabel3.setText("Grau de parentesco");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(540, 280, 110, 16);
+        jLabel3.setBounds(440, 240, 110, 16);
 
         jLabel4.setText("Doença");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(540, 350, 40, 16);
+        jLabel4.setBounds(440, 290, 40, 16);
 
         jLabel5.setText("Grau de parentesco");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(540, 420, 102, 16);
+        jLabel5.setBounds(440, 340, 102, 16);
 
         jLabel6.setText("Doença");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(540, 490, 40, 16);
+        jLabel6.setBounds(440, 390, 40, 16);
 
         jLabel7.setText("Grau de parentesco");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(540, 560, 110, 16);
+        jLabel7.setBounds(440, 440, 110, 16);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(540, 240, 290, 22);
+        jTextField2.setBounds(440, 210, 250, 22);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(540, 310, 290, 22);
+        jTextField3.setBounds(440, 260, 250, 22);
         getContentPane().add(jTextField4);
-        jTextField4.setBounds(540, 380, 290, 22);
+        jTextField4.setBounds(440, 310, 250, 22);
         getContentPane().add(jTextField5);
-        jTextField5.setBounds(540, 450, 290, 22);
+        jTextField5.setBounds(440, 360, 250, 22);
         getContentPane().add(jTextField6);
-        jTextField6.setBounds(540, 520, 290, 22);
+        jTextField6.setBounds(440, 410, 250, 22);
         getContentPane().add(jTextField7);
-        jTextField7.setBounds(540, 590, 290, 22);
+        jTextField7.setBounds(440, 460, 250, 22);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(jComboBox2);
-        jComboBox2.setBounds(130, 280, 270, 22);
+        jComboBox2.setBounds(90, 240, 250, 22);
 
-        Seta.setBackground(new java.awt.Color(170, 191, 184));
-        Seta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SetaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Seta);
-        Seta.setBounds(0, 0, 80, 40);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\Tiago\\faculdade\\imgA3\\9CDF.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danil\\OneDrive\\Documentos\\Faculdade\\imgA3\\CDF.png")); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1174, 830);
+        jLabel1.setBounds(0, 0, 775, 558);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SetaActionPerformed
-       A3Dados doenças = new A3Dados();
-       doenças.setVisible(true);
-    }//GEN-LAST:event_SetaActionPerformed
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,7 +149,6 @@ public class A3CDF extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Seta;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
